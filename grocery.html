@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Grocery</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <span class="plan">✦ Grocery ✦</span>
+      <div class="header-right">
+        <button class="button" onclick="location.href='index.html'">Meal Plan</button>
+        <button class="button" onclick="location.href='grocery.html'">Grocery</button>
+        <button class="button" onclick="location.href='recipes.html'">Recipes</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="lists-container">
+      <!-- Refrigerator List -->
+      <div class="refrigerator-container">
+        <h3 class="title">Refrigerator</h3>
+        <table class="refrigerator-table">
+          <tbody>
+            <tr><td><input type="text" class="meal-input refrigerator-input" placeholder="Add item..." data-day="refrigerator" data-meal="item1"></td></tr>
+            <tr><td><input type="text" class="meal-input refrigerator-input" placeholder="Add item..." data-day="refrigerator" data-meal="item2"></td></tr>
+            <tr><td><input type="text" class="meal-input refrigerator-input" placeholder="Add item..." data-day="refrigerator" data-meal="item3"></td></tr>
+            <tr><td><input type="text" class="meal-input refrigerator-input" placeholder="Add item..." data-day="refrigerator" data-meal="item1"></td></tr>
+            <tr><td><input type="text" class="meal-input refrigerator-input" placeholder="Add item..." data-day="refrigerator" data-meal="item2"></td></tr>
+            <tr><td><input type="text" class="meal-input refrigerator-input" placeholder="Add item..." data-day="refrigerator" data-meal="item3"></td></tr>
+          </tbody>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Grocery List -->
+      <div class="grocery-container">
+        <h3 class="title">Grocery</h3>
+        <table class="grocery-table">
+          <tbody>
+            <tr><td><input type="text" class="meal-input refrigerator-input" placeholder="Add item..." data-day="refrigerator" data-meal="item1"></td></tr>
+            <tr><td><input type="text" class="meal-input refrigerator-input" placeholder="Add item..." data-day="refrigerator" data-meal="item2"></td></tr>
+            <tr><td><input type="text" class="meal-input refrigerator-input" placeholder="Add item..." data-day="refrigerator" data-meal="item3"></td></tr>
+            <tr><td><input type="text" class="meal-input refrigerator-input" placeholder="Add item..." data-day="refrigerator" data-meal="item1"></td></tr>
+            <tr><td><input type="text" class="meal-input refrigerator-input" placeholder="Add item..." data-day="refrigerator" data-meal="item2"></td></tr>
+            <tr><td><input type="text" class="meal-input refrigerator-input" placeholder="Add item..." data-day="refrigerator" data-meal="item3"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="meal-plan-actions">
+      <button id="saveMealPlan" class="action-btn save-btn">Save All</button>
+      <button id="clearMealPlan" class="action-btn clear-btn">Clear All</button>
+    </div>
+  </main>
+
+  <script src="meal.js"></script>
+</body>
+</html>

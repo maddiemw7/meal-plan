@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Recipes</title>
+
+</head>
+<body class="recipes-page">
+<header>
+<div class="header">
+<span class="plan">✦ Recipes ✦</span>
+  <div class="header-right">
+    <button class="button" onclick="location.href='index.html'">Meal Plan</button>
+    <button class="button" onclick="location.href='grocery.html'">Grocery</button>
+    <button class="button" onclick="location.href='recipes.html'">Recipes</button>
+</div>
+</header>
+
+
+<main>
+   <!-- Public Recipes  -->
+   <section>
+    <h2>Public Recipes</h2>
+    <div id="publicRecipes">Loading public recipes...</div>
+  </section>
+
+  <!-- Custom Recipes -->
+  <section>
+    <h2>My Recipes</h2>
+    <div id="customRecipes">Loading custom recipes...</div>
+  </section>
+
+    <!-- Add Custom Recipe Form -->
+    <section>
+      <h2>Add Recipe</h2>
+      <form id="addRecipeForm" class="recipe-form">
+        <div class="form-group">
+          <label for="recipeName">Recipe Name:</label>
+          <input type="text" id="recipeName" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="recipeCategory">Category:</label>
+          <input type="text" id="recipeCategory" name="category" placeholder="e.g., Italian, Mexican, Dessert">
+        </div>
+        
+        <div class="form-group">
+          <label for="recipeImage">Image URL:</label>
+          <input type="url" id="recipeImage" name="imageUrl" placeholder="https://example.com/image.jpg">
+        </div>
+        
+        <div class="form-group">
+          <label for="recipeIngredients">Ingredients (one per line):</label>
+          <textarea id="recipeIngredients" name="ingredients" rows="6" placeholder="1 cup flour&#10;2 eggs&#10;1/2 cup sugar" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="recipeInstructions">Instructions:</label>
+          <textarea id="recipeInstructions" name="instructions" rows="8" placeholder="Step 1: Mix ingredients...&#10;Step 2: Bake for 30 minutes..." required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Add Recipe</button>
+      </form>
+    </section>
+
+    
+
+   
+<script type="module" src="script.js"></script>
+  
+</body>
+</html>
