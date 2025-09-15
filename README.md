@@ -10,4 +10,4 @@ Built with HTML, CSS, and JavaScript (localStorage persistence).
 - Local notifications for user feedback
 
 ## Demo
-[Live site here]
+[Live site here] https://maddiemw7.github.io/meal-plan/
